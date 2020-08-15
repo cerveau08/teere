@@ -21,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Future.delayed(
-      Duration(seconds: 2),
+      Duration(seconds: 5),
       () {
         Navigator.push(
           context,
@@ -43,61 +43,252 @@ class _SplashScreenState extends State<SplashScreen> {
               color: Colors.white
             ),
           ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: <Widget>[
-              Expanded(
-                flex: 2,
-                child: Container(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      CircleAvatar(
-                        backgroundColor: Colors.blue,
-                        radius: 50.0,
-                        child: Icon(
-                          Icons.access_alarm,
-                          color: Colors.greenAccent,
-                          size: 50.0
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(top: 10),
-                      ),
-                      Text(
-                        "Teere",
-                        style: TextStyle(
-                          color: Colors.red,
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold
-                        ),
-                      )
-                    ],
+          Positioned(
+            top: 50,
+            left: 5,
+            child: Image.asset("assets/images/icon.png",
+            fit: BoxFit.fitWidth
+            ),
+          ),
+          Positioned(
+            top: 
+            50,
+            left: 140,
+            child: Column(
+              children: <Widget>[
+                Text(
+                  "T",
+                  style: TextStyle(
+                    color: Colors.brown,
+                    fontSize: 60,
+                    fontWeight: FontWeight.bold
                   ),
                 )
-              ),
-              Expanded(
-                flex: 1,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    CircularProgressIndicator(),
-                    Padding(
-                      padding: EdgeInsets.only(top: 20)
-                    ),
-                    Text(
-                      "Teere Volkeno",
-                      style: TextStyle(
-                        color: Colors.red,
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold
-                      )
-                    )
-                  ],
+              ]
+            ),
+          ),
+          Positioned(
+            top: 
+            50,
+            left: 170,
+            child: Column(
+              children: <Widget>[
+                Text(
+                  "e",
+                  style: TextStyle(
+                    color: Colors.brown,
+                    fontSize: 60,
+                    fontWeight: FontWeight.bold
+                  ),
+                )
+              ]
+            ),
+          ),
+          Positioned(
+            top: 
+            50,
+            left: 210,
+            child: Column(
+              children: <Widget>[
+                Text(
+                  "e",
+                  style: TextStyle(
+                    color: Colors.deepOrange,
+                    fontSize: 60,
+                    fontWeight: FontWeight.bold
+                  ),
+                )
+              ]
+            ),
+          ),
+          Positioned(
+            top: 
+            50,
+            left: 250,
+            child: Column(
+              children: <Widget>[
+                Text(
+                  "r",
+                  style: TextStyle(
+                    color: Colors.yellow[500],
+                    fontSize: 60,
+                    fontWeight: FontWeight.bold
+                  ),
+                )
+              ]
+            ),
+          ),
+          Positioned(
+            top: 
+            50,
+            left: 280,
+            child: Column(
+              children: <Widget>[
+                Text(
+                  "e",
+                  style: TextStyle(
+                    color: Colors.brown,
+                    fontSize: 60,
+                    fontWeight: FontWeight.bold
+                  ),
+                )
+              ]
+            ),
+          ),
+          Positioned(
+            top: 115,
+            left: 155,
+            child: Column(
+              children: <Widget>[
+                Text(
+                  "Le meilleur moyen",
+                  style: TextStyle(
+                    color: Colors.black,
+                  ),
+                )
+              ]
+            ),
+          ),
+          Positioned(
+            top: 135,
+            left: 155,
+            child: Column(
+              children: <Widget>[
+                Text(
+                  "de (faire) decouvrir",
+                  style: TextStyle(
+                    color: Colors.black,
+                  ),
+                )
+              ]
+            ),
+          ),
+          Positioned(
+            top: 165,
+            left: 155,
+            child: Column(
+              children: <Widget>[
+                Text(
+                  "l'Afrique",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 32
+                  ),
+                )
+              ]
+            ),
+          ),
+          Positioned(
+            top: 350,
+            left: 140,
+            child: Column(
+              children: <Widget>[
+                CircleAvatar(
+                  backgroundColor: Colors.redAccent,
+                  radius: 20.0,      
                 ),
-              )
-            ]
-          )
+              ]
+            ),
+          ),
+          Positioned(
+            top: 300,
+            left: 110,
+            child: Column(
+              children: <Widget>[
+                CircleAvatar(
+                  backgroundColor: Colors.yellow,
+                  radius: 30.0,      
+                ),
+              ]
+            ),
+          ),
+          
+          Positioned(
+            top: 320,
+            left: 20,
+            child: Column(
+              children: <Widget>[
+                CircleAvatar(
+                  backgroundColor: Colors.deepOrange,
+                  radius: 70.0, 
+                  child: Text(
+                          "version 1.3",
+                          style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold
+                        ),
+                        ),     
+                ),
+              ]
+            ),
+          ),
+          Positioned(  
+            top: 370,
+            left: 250,
+            child: Container(
+              color: Colors.brown,
+              height: 195,
+              width: 50,
+              alignment: Alignment(0.7, 0.8),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  Text("gafe",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                  ),
+                  Text("wema",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                  ),
+                  Text("littalin",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),),
+                  Text("adlis",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),),
+                  Text("buku",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),),
+                  Text("igitaba",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),),
+                  Text("buku",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),),
+                  Text("dettere",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),),
+                  Text("buug",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),),
+                  Text("kitabu",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),),
+                  Text("teere",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),),
+                  Text("ibhuku",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),),
+                ],
+              ),
+            )
+          ,)
         ],
       )
     );
