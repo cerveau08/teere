@@ -4,8 +4,9 @@ import 'package:teere/home.dart';
 
 void main() => runApp(MaterialApp(
   theme: ThemeData(
-    primaryColor: Colors.red,
-    accentColor: Colors.yellowAccent),
+    primaryColor: Colors.white,
+    accentColor: Colors.yellowAccent
+    ),
   debugShowCheckedModeBanner: false,
   home: SplashScreen()
 ));
