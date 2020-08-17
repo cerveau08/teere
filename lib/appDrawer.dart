@@ -2,6 +2,13 @@ import 'package:flutter/widgets.dart';
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:teere/citations/citation.dart';
+import 'package:teere/histoires/lesHistoire.dart';
+import 'package:teere/langues/listlangue.dart';
+import 'package:teere/pays/pays.dart';
+import 'package:teere/portraits/portrait.dart';
+import 'package:teere/proverbes/proverbe.dart';
+import 'package:teere/quiz.dart';
 
 class AppDrawer extends StatelessWidget {
   @override
@@ -20,6 +27,12 @@ class AppDrawer extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Langue()) 
+              );
+            },
           ),
           ListTile(
             leading: FaIcon(FontAwesomeIcons.globeAfrica, color: Colors.white,),
@@ -28,6 +41,12 @@ class AppDrawer extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Pays()) 
+              );
+            },
           ),
           ListTile(
             leading: FaIcon(FontAwesomeIcons.userFriends, color: Colors.white,),
@@ -37,6 +56,10 @@ class AppDrawer extends StatelessWidget {
               ),
             ),
             onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Portrait()) 
+              );
             },
           ),
           ListTile(
@@ -45,7 +68,13 @@ class AppDrawer extends StatelessWidget {
               style: TextStyle(
               color: Colors.white,
               ),
-            )
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Histoire()) 
+              );
+            },
           ),
           ListTile(
             leading: FaIcon(FontAwesomeIcons.bookOpen, color: Colors.white,),
@@ -53,7 +82,13 @@ class AppDrawer extends StatelessWidget {
               style: TextStyle(
               color: Colors.white,
               ),
-            )
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Citation()) 
+              );
+            },
           ),
           ListTile(
             leading: FaIcon(FontAwesomeIcons.bolt, color: Colors.white,),
@@ -61,7 +96,13 @@ class AppDrawer extends StatelessWidget {
               style: TextStyle(
                 color: Colors.white,
               ),
-            )
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Proverbe()) 
+              );
+            },
           ),
           ListTile(
             leading: FaIcon(FontAwesomeIcons.streetView, color: Colors.white,),
@@ -69,7 +110,13 @@ class AppDrawer extends StatelessWidget {
               style: TextStyle(
                 color: Colors.white,
               ),
-            )
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Quiz()) 
+              );
+            },
           ),
           ListTile(
             leading: FaIcon(FontAwesomeIcons.infoCircle, color: Colors.white,),

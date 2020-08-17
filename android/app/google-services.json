@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "475868660805",
+    "firebase_url": "https://teere-dcd18.firebaseio.com",
+    "project_id": "teere-dcd18",
+    "storage_bucket": "teere-dcd18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475868660805:android:2d86c1432a6ac434bf4f2c",
+        "android_client_info": {
+          "package_name": "com.example.teere"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "475868660805-ge4logq4al8mk10303n3d1dqjgfgbtae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG-CMlM3z5e7ljHVpW3ApFxBYOJ2P68WE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "475868660805-ge4logq4al8mk10303n3d1dqjgfgbtae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
